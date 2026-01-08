@@ -19,9 +19,9 @@ import random
 import pandas as pd
 
 
-from reportlab.lib.pagesizes import letter, landscape
-from reportlab.graphics.shapes import Drawing, Rect, Circle, String
-from reportlab.graphics import renderPDF
+#from reportlab.lib.pagesizes import letter, landscape
+#from reportlab.graphics.shapes import Drawing, Rect, Circle, String
+#from reportlab.graphics import renderPDF
 
 import numpy as np
 
