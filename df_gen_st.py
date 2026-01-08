@@ -14,7 +14,7 @@ import sys
 import random
 from math import ceil
 
-from reportlab.pdfgen import canvas
+#from reportlab.pdfgen import canvas
 import random
 import pandas as pd
 
