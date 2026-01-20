@@ -14,14 +14,14 @@ import sys
 import random
 from math import ceil
 
-#from reportlab.pdfgen import canvas
+
 import random
 import pandas as pd
 
-
-#from reportlab.lib.pagesizes import letter, landscape
-#from reportlab.graphics.shapes import Drawing, Rect, Circle, String
-#from reportlab.graphics import renderPDF
+# from reportlab.pdfgen import canvas
+# from reportlab.lib.pagesizes import letter, landscape
+# from reportlab.graphics.shapes import Drawing, Rect, Circle, String
+# from reportlab.graphics import renderPDF
 
 import numpy as np
 
@@ -374,6 +374,16 @@ st.title("Dry-Fire Stage Generator")
 with st.sidebar:
     st.header("Stage Parameters")
 
+
+    shooting_style = st.selectbox(
+        "Shooting Style", 
+        ["USPSA", "2-Gun PCSL", "Run-n-Gun", "Long-range rifle"]
+        )
+    
+    positions = st.selectbox(
+        "Choose positions",
+        ["Standing", "Kneeling", "Sitting", "Prone"])
+    
     wall_distance = st.number_input(
         "Actual Distance (yards)",
         min_value=0,
